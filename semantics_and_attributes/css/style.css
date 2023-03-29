@@ -1,0 +1,44 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: darkgreen;
+    padding: 36px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 48px;
+    color: white;
+}
+
+h3 {
+    padding: 24px;
+    color: darkgreen;
+}
+
+nav a {
+    color: white;
+}
+
+.card {
+
+    margin: 24px;
+    border: 3px solid lightgreen;
+    padding: 16px;
+    /*offset-x offset-y 
+    blur-radius spread-radius 
+    color
+    */
+    box-shadow: inset 4px 4px 8px 2px black;
+}
+
+footer {
+    background-color: darkgreen;
+    padding: 34px;
+    color: white;
+    text-align: center;
+}
