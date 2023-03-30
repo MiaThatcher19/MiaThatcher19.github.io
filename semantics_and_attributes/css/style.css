@@ -42,3 +42,12 @@ footer {
     color: white;
     text-align: center;
 }
+
+.card img {
+    width: 400px;
+}
+
+#image_container {
+    float: left;
+    padding-right: 24px;
+}
