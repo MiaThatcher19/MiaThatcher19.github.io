@@ -184,6 +184,6 @@ footer ul {
             "footer_area";
     }
     nav {
-        flex-direction: colum;
+        flex-direction: column;
     }
 }
