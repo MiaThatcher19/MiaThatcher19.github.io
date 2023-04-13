@@ -285,6 +285,12 @@ footer ul {
     height: calc(800px / 3);
     object-fit: cover;
 }
+
+#carousel_container img {
+    background-color: darkred;
+    width: 100%;
+    margin-bottom: 24px;
+}
 /****************************************************************************
   Media Query - Mobile Breakpoint
 ****************************************************************************/
