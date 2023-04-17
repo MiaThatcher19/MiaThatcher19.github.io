@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Document</title>
+        <link href="css/style.css" rel="stylesheet">
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Forms Example</title>
+            </head>
+            <body>
+                <header>
+                <h1>Villain or Hero?</h1>
+                <form>
+                    <fieldset>
+                        <legend>Your Information</legend>
+        
+                        <h2>About You</h2>
+                        <h4>Please fill out the boxes</h4>
+                        <p>What is your name?</p>
+        
+                        <div>
+                            <label for="first_name_id">First Name:</label>
+                            <input type="text" id="first_name_id" name="first_name">
+                        </div>
+                        <div>
+                            <label for="last_name_id">Last Name:</label>
+                            <input type="text" id="last_name_id" name="last_name">
+                        </div>
+        
+                        <h2>Summery About You</h2>
+                        <h4>Give us a summery about you like what you like or dont like </h4>
+        
+                        <div>
+                            <label for="code_feelings_id">.</label>
+                            <textarea 
+                                id="code_feelings_id" 
+                                name="code_feelings"
+                                rows="5"
+                                cols="40"
+                                placeholder="This is the default text for a text area"></textarea>
+                        </div>
+                    </header>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Questions</legend>
+                        <h2>Questions About You</h2>
+                        <h4>
+                            Click witch answer relates to you the most 
+                        </h4>
+                        <p>What do you classify your self as?</p>
+                        <div>
+                            <input type="checkbox" id="hero_checkbox" name="vehicle_1" value="hero">
+                            <label for="hero_checkbox">Hero</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="villain_checkbox" name="vehicle_2" value="villain">
+                            <label for="bus_checkbox">Villain</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="regular_person_checkbox" name="vehicle_3" value="regular_person">
+                            <label for="regular_person_checkbox">Regular Person</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="idk_checkbox" name="vehicle_4" value="idk">
+                            <label for="idk_checkbox">I Dont Know</label>
+                        </div>
+        
+                        <h2>What Do You Do In Your Spare Time?</h2>
+                        <h4>
+                            Answer the question below
+                        </h4>
+                        <p>What domyou do in your free time?</p>
+        
+                        <div>
+                            <input type="radio" id="rasp_radio" name="program" value="rasp">
+                            <label for="rasp_radio">Help worldly problems and be a good citizen</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="dfvp_radio" name="program" value="dfvp">
+                            <label for="dfvp_radio">Plan world domination</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="gdwd_radio" name="program" value="gdwd">
+                            <label for="gdwd_radio">Play video games all day</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>DOB and Persinol Question</legend>
+                        <h2>Date Input</h2>
+                        <h4>Put the date year and month you were born down below</h4>
+        
+                        <div>
+                            <label for="date_id">When is your birthday?</label>
+                            <input type="date" id="date_id" name="birthday">
+                        </div>
+        
+                        <h2>Persinol question</h2>
+                        <h4>
+                            Just so we know it is you answer the question the drop down box
+                        </h4>
+        
+                        <div>
+                            <label for="food_group_id">
+                                What is your favorite animal?
+                            </label>
+                            <select id="food_group_id" name="food_group">
+                                <option value="lions">Lions</option>
+                                <option value="bats">Bats</option>
+                                <option value="butterflies">Butterflies</option>
+                                <option value="bears">Bears</option>
+                                <option value="cats">Cats</option>
+                            </select>
+                        </div>
+                        <footer>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Back home and more</legend>
+                        <h2>Click the home button to go back to the home page or save and submit</h2>
+        
+                        <div>
+                            <input type="button" value="Home Button">
+                            <input type="reset" value="Click me to reset everything">
+                            <input type="submit" value="Submit everything">
+                        </div>
+                    </fieldset>
+                </form>
+            </footer>
+    </body>
+</html>
