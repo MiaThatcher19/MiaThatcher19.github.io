@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head> 
+            <!DOCTYPE html>
+            <html lang="en">
+                <head> 
+                    <meta charset="UTF-8"> 
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+                    <title>Contact Form</title>
+                    <link href="css/style.css" rel="stylesheet">
+      </head>
+      <body>
+         <section id="grid_container">
+              <header>
+                <h1>Contact Us</h1>
+                <h5>Got a question? We'd love
+                    to hear from you. Send us a 
+                    message and we'll respond as soon as possible
+                </h5>
+            </header>
+              <main>
+                <form>
+                    <div>
+                        <label for="food_group_id">
+                            What can we help you with?
+                        </label>
+                        <select id="food_group_id" name="food_group">
+                            <option value="not_working">Website not working?</option>
+                            <option value="lost_info">Lost your information on our website?</option>
+                            <option value="bckground">How to change background on website?</option>
+                            <option value="use">How to use website?</option>
+                            <option value="other">How to add another user</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="name_id">Name:</label>
+                        <input type="text" id="name_id" name="name">
+                    </div>
+                    <div>
+                        <label for="email_id">Email:</label>
+                        <input type="text" id="email_id" name="email">
+                    </div>
+                    <h4>Message</h4>
+                    <h4>Tell us whats going on</h4>
+    
+                    <div>
+                        <label for="code_feelings_id">.</label>
+                        <textarea 
+                            id="code_feelings_id" 
+                            name="code_feelings"
+                            rows="5"
+                            cols="40"
+                            placeholder="This is the default text for a text area">
+                        </textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+              </main>
+         </section>
+    </body>
+</html>
