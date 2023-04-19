@@ -41,10 +41,6 @@ input[type=submit]:active {
 }
 
 .text_input input {
-    /* 
-        3 value in margin represent:
-        top, left/right, bottom
-    */
     margin: 4px 0px 16px;
     padding: 12px;
     font-size: 18px;
@@ -52,33 +48,109 @@ input[type=submit]:active {
     width: 300px;
 }
 
-#name_id {
-    border: 0px;
-    border-bottom: 4px solid lightblue;
-    margin-bottom: 24px;
-    width: 100%;
+#first_name_id {
+    border: 5px solid lightblue;
+    border-radius: 24px;
+    color: black;
 }
 
-#name_id:focus-visible {
+#first_name_id:focus-visible {
     outline: 0;
-    background-color: rgb(192, 226, 239);
+    background-color: rgb(197, 238, 254);
+}
+
+#first_name_id:invalid {
+    background-color: lightgoldenrodyellow;
+    border-bottom: 4px solid lightblue;
+}
+
+input[type=email]:invalid {
+    background-color: lightcoral;
+    border-bottom: 4px solid red;
+}
+
+#last_name_id {
+    border: 5px solid lightblue;
+    border-radius: 24px;
+    color: black;
+}
+
+#last_name_id:focus-visible {
+    outline: 0;
+    background-color: lightgoldenrodyellow;
+    color: black;
 }
 
 #email_id {
     border: 5px solid lightblue;
     border-radius: 24px;
-    color: darkblue;
-    margin-bottom: 24px;
-    width: 100%;
+    color: black;
 }
 
 #email_id:focus-visible {
     outline: 0;
-    background-color: rgb(161, 161, 230);
-    color: white;
-
+    background-color: lightgoldenrodyellow;
+    color: black;
 }
+
+#password_id {
+    border: 5px solid lightblue;
+    border-radius: 24px;
+    color: black;
+}
+
+#password_id:focus-visible {
+    outline: 0;
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+
 .div {
     margin-bottom: 24px;
     width: 100%;
+}
+
+#help_id {
+    margin-bottom: 24px;
+    width: 100%;
+}
+     
+input[type=button] {
+    border: 3px solid black;
+    border-radius: 6px;
+    padding: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+input[type=button]:hover {
+    background-color: darkgrey;
+    color: white;
+}
+
+input[type=submit] {
+    background: linear-gradient(to bottom, skyblue, teal);
+    border: 0px;
+    border-radius: 8px;
+    padding: 12px 48px;
+    cursor: pointer;
+    color: white;
+}
+
+input[type=reset] {
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 12px;
+    margin-right: 12px;
+    background: linear-gradient(to bottom,  skyblue, teal);
+    color: white;
+    cursor: pointer;
+}
+
+input[type=reset]:active {
+    background: linear-gradient(to top,  skyblue, teal);
+}
+
+input:not(:focus):not(::placeholder-shown):invalid {
+    background-color: lightcoral;
+    border: 2px solid red;
 }
