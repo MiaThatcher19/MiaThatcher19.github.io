@@ -1,0 +1,171 @@
+#grid_container {
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+    grid-template-areas:
+    ". header_area ."
+    ". main_area .";
+}
+header {
+    grid-area: header_area;
+    
+}
+main {
+    grid-area: main_area;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+form {
+    background-color: white;
+    border: 2px solid #CCCCCC;
+    padding: 36px;
+}
+
+input[type=submit] {
+    background: rgb(17, 172, 17);
+    border: 0px;
+    border-radius: 8px;
+    padding: 12px 48px;
+    cursor: pointer;
+    color:white;
+}
+input[type=submit]:hover {
+    opacity: 0.9;
+}
+input[type=submit]:active {
+    background: rgb(17, 172, 17);
+}
+
+.text_input label {
+    display: block;
+}
+
+.text_input input {
+    margin: 4px 0px 16px;
+    padding: 12px;
+    font-size: 18px;
+    font-family: Verdana, sans-serif;
+    width: 300px;
+}
+
+#first_name_id {
+    border: 5px solid lightgray;
+    border-radius: 24px;
+    color: black;
+}
+
+#first_name_id:focus-visible {
+    outline: 0;
+    background-color: lightgrey;
+}
+
+#first_name_id:invalid {
+    background-color: rgb(248, 237, 237);
+    border-bottom: 4px solid lightgrey;
+}
+
+input[type=email]:invalid {
+    background-color: lightcoral;
+    border-bottom: 4px solid red;
+}
+
+#last_name_id {
+    border: 5px solid lightgrey;
+    border-radius: 24px;
+    color: black;
+}
+
+#last_name_id:focus-visible {
+    outline: 0;
+    background-color: rgb(248, 237, 237);
+    color: black;
+}
+
+#email_id {
+    border: 5px solid lightgrey;
+    border-radius: 24px;
+    color: black;
+}
+
+#email_id:focus-visible {
+    outline: 0;
+    background-color: rgb(248, 237, 237);
+    color: black;
+}
+
+#password_id {
+    border: 5px solid lightgrey;
+    border-radius: 24px;
+    color: black;
+}
+
+#password_id:focus-visible {
+    outline: 0;
+    background-color: rgb(248, 237, 237);
+    color: black;
+}
+
+.div {
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+#help_id {
+    margin-bottom: 24px;
+    width: 100%;
+}
+     
+input[type=button] {
+    border: 3px solid white;
+    border-radius: 6px;
+    padding: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+input[type=button]:hover {
+    background-color: darkgrey;
+    color: white;
+}
+
+input:not(:focus):not(::placeholder-shown):invalid {
+    background-color: lightcoral;
+    border: 2px solid red;
+}
+
+#birthday_id {
+    border: 3px solid lightgrey;
+    border-radius: 24px;
+    color: black;
+    width: 30%;
+}
+
+#birthday_id:focus-visible {
+    outline: 0;
+    background-color: lightgrey;
+}
+
+#rasp_radio {
+    border: 3px solid lightgrey;
+    border-radius: 24px;
+    color: black;
+    width: 30%;
+}
+
+#rasp_radio:focus-visible {
+    outline: 0;
+    background-color: lightgrey;
+}
+
+#dfvp_radio {
+    border: 3px solid lightgrey;
+    border-radius: 24px;
+    color: black;
+    width: 30%;
+}
+
+#dfvp_radio:focus-visible {
+    outline: 0;
+    background-color: lightgrey;
+}
