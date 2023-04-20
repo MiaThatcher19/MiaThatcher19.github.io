@@ -52,7 +52,7 @@ input[type=submit]:active {
 
 #first_name_id {
     border: 5px solid lightgray;
-    border-radius: 24px;
+    border-radius: 10px;
     color: black;
 }
 
@@ -73,8 +73,9 @@ input[type=email]:invalid {
 
 #last_name_id {
     border: 5px solid lightgrey;
-    border-radius: 24px;
+    border-radius: 10px;
     color: black;
+    width: 30%;
 }
 
 #last_name_id:focus-visible {
@@ -85,8 +86,9 @@ input[type=email]:invalid {
 
 #email_id {
     border: 5px solid lightgrey;
-    border-radius: 24px;
+    border-radius: 10px;
     color: black;
+    width:90%;
 }
 
 #email_id:focus-visible {
@@ -97,14 +99,16 @@ input[type=email]:invalid {
 
 #password_id {
     border: 5px solid lightgrey;
-    border-radius: 24px;
+    border-radius: 10px;
     color: black;
+    width:90%;
 }
 
 #password_id:focus-visible {
     outline: 0;
     background-color: rgb(248, 237, 237);
     color: black;
+    
 }
 
 .div {
@@ -122,11 +126,13 @@ input[type=button] {
     border-radius: 6px;
     padding: 12px;
     margin-right: 12px;
-    cursor: pointer;
+    cursor: pointer; 
 }
+
 input[type=button]:hover {
     background-color: darkgrey;
     color: white;
+    
 }
 
 input:not(:focus):not(::placeholder-shown):invalid {
@@ -136,7 +142,7 @@ input:not(:focus):not(::placeholder-shown):invalid {
 
 #birthday_id {
     border: 3px solid lightgrey;
-    border-radius: 24px;
+    border-radius: 5px;
     color: black;
     width: 30%;
 }
@@ -148,9 +154,9 @@ input:not(:focus):not(::placeholder-shown):invalid {
 
 #rasp_radio {
     border: 3px solid lightgrey;
-    border-radius: 24px;
+    border-radius: 5px;
     color: black;
-    width: 30%;
+    width: 20%;
 }
 
 #rasp_radio:focus-visible {
@@ -160,12 +166,32 @@ input:not(:focus):not(::placeholder-shown):invalid {
 
 #dfvp_radio {
     border: 3px solid lightgrey;
-    border-radius: 24px;
+    border-radius: 10px;
     color: black;
-    width: 30%;
+    width: 25%;
 }
 
 #dfvp_radio:focus-visible {
     outline: 0;
     background-color: lightgrey;
+}
+
+#gdwd_radio {
+    width: 25%;
+}
+
+
+h3 {
+    color: rgb(151, 146, 146);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+p {
+    text-align: left, center;
+    padding: 10px;
+    margin: 10px;
+    
 }
