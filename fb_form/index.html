@@ -22,30 +22,28 @@
                 <hr>
             </header>
               <main>
-                <form>
-                    <div>
-                    <div class="text_input">
-                        <label for="first_name_id"></label>
-                        <input 
-                            required
-                            minlength="2"
-                            maxlength="10"
-                            type="text" 
-                            id="first_name_id" 
-                            name="first_name"
-                            placeholder="First name">
-                    </div>
-                    <div class="text_input">
-                        <label for="last_name_id"></label>
-                        <input                             
-                            required
-                            minlength="2"
-                            maxlength="10"
-                            type="text" 
-                            id="last_name_id" 
-                            name="last_name"
-                            placeholder="Last name">
-                    </div>
+                <form> 
+                    <div class="flex_box">
+                        <div class="text_input">
+                            <input 
+                                required
+                                minlength="2"
+                                maxlength="10"
+                                type="text" 
+                                id="first_name_id" 
+                                name="first_name"
+                                placeholder="First name">
+                        </div>
+                        <div class="text_input">
+                            <input                             
+                                required
+                                minlength="2"
+                                maxlength="10"
+                                type="text" 
+                                id="last_name_id" 
+                                name="last_name"
+                                placeholder="Last name">
+                        </div>
                     </div>
                 </form>
                     <div class="text_input">
@@ -93,15 +91,19 @@
                     <div>
                     <label>Gender</label>
                     </div>
-                    <div>
-                        <label for="rasp_radio">Female</label>
-                        <input type="radio" id="rasp_radio" name="program" value="rasp">
-
-                        <label for="dfvp_radio">Male</label>
-                        <input type="radio" id="dfvp_radio" name="program" value="dfvp">
-
-                        <label for="gdwd_radio">Custom</label>
-                        <input type="radio" id="gdwd_radio" name="program" value="gdwd">
+                    <div class="flex_box">
+                        <div class="gender_container">
+                            <label for="rasp_radio">Female</label>
+                            <input type="radio" id="rasp_radio" name="program" value="rasp">
+                        </div>
+                        <div class="gender_container">
+                            <label for="dfvp_radio">Male</label>
+                            <input type="radio" id="dfvp_radio" name="program" value="dfvp">
+                        </div>
+                        <div class="gender_container">
+                            <label for="gdwd_radio">Custom</label>
+                            <input type="radio" id="gdwd_radio" name="program" value="gdwd">
+                        </div>
                     </div>
                     
                     <section>
@@ -112,11 +114,11 @@
                             By clicking Sign Up you agreed to our <a href="#">Terms, Privacy Policy</a> and <a href="#">Cookies Policy.</a> You may recieve SMS Notifications from us and can opt out any time
                         </p>
                     </section>
-                    <div>
+                    <div class="text_align">
                         <input type="submit" value="Sign Up">
                     </div>
                     <div>
-                            <a href="#">Already have an account</a>
+                            <h4><a href="#">Already have an account</a></h4>
                     </div>
                 
               </main>
