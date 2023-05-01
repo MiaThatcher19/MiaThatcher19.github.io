@@ -1,0 +1,243 @@
+body {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #040405;
+}
+
+#hero {
+    background-image: url("../images/backgroundLarge.jpg");
+    background-size: cover;
+}
+
+nav {
+    padding: 1px 36px;
+    background: black;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav img {
+    width: 60px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.5s;
+}
+
+nav a:hover {
+    background-color: rgb(93, 92, 92);
+}
+
+#hero_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero_content p {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+.clear_button_link {
+    display: inline-block;
+    background-color: blue;
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 14px;
+    padding: 16px;
+    border-radius: 6px;
+    width: 150px;
+    text-align: center;
+    transition: opacity 0.5s;
+    border: 0px;
+    border-bottom: 4px solid blue;
+    align-self: center;
+}
+
+.button_link:hover {
+    opacity: 0.5;
+}
+
+.small_link,
+.medium_link {
+    color: white;
+    display: inline-block;
+}
+
+.small_link {
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.medium_link {
+    margin-top: 28px;
+}
+
+.text_input, 
+.text_align {
+    text-align: center;
+    color: white;
+}
+#footer_img {
+    display: flex;
+    align-items: center;
+    padding: 12px 36px;
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.clear_button_link {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 13px 2px;
+    border-radius: 4px;
+    align-self: center;
+
+}
+
+.clear_button_link:hover {
+    background-color: white;
+    color: black;
+}
+
+.tiny_link {
+    display: block;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 4px;
+}
+
+
+#footer_img {
+    margin: 0px 24px;
+    flex: 1;
+}
+
+#email_id {
+    border: 5px solid;
+    border-radius: 20px;
+    color: darkgrey;
+    width:30%;
+    background-color: grey;
+    border: 0px;
+    border-bottom: 4px solid;
+    align-content: center;
+}
+
+#email_id:focus-visible {
+    outline: 0;
+    background-color: grey;
+    color: black;
+}
+
+#buttons {
+    margin-bottom: 400px;
+}
+
+#cards_section {
+    text-align: center;
+    margin-top: 90px;
+    color: white;
+}
+
+#cards_section h2,
+#cards_section p,
+#cards_section h6,
+#cards_section h4 {
+    color: white;
+} 
+
+#cards_section h2 {
+    font-size: 48px;
+    margin-top: 0px;
+}
+
+#cards_section p {
+    width: 700px;
+    margin: 0px auto;
+}
+
+#cards_container {
+    display: grid;
+    grid-template-columns: repeat(4, 295px);
+    grid-auto-rows: 450px;
+    grid-gap: 24px;
+    width: 1252px;
+    margin: 60px auto;
+    text-align: left;
+    
+}
+
+#cards_container div {
+    padding-left: 24px;
+}
+
+#cards_container h6 {
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+#cards_container h4 {
+    font-size: 22px;
+    margin-top: 0px;
+}
+
+#wakando_forever {
+    background-image: url("../images/wakandaForever.jpg");
+    background-size: contain;
+}
+
+#andor {
+    background-image: url("../images/andor.jpg");
+    background-size: contain;
+}
+
+#turning_red {
+    background-image: url("../images/turningRed.jpg");
+    background-size: contain;
+}
+
+#fire_of_love {
+    background-image: url("../images/fireOfLove.jpg");
+    background-size: contain;
+}
+
+#encanto {
+    background-image: url("../images/encanto.jpg");
+    background-size: contain;
+}
+
+
+#zootopia{
+    background-image: url("../images/zootopiaPlus.jpg");
+    background-size: contain;
+}
+
+@media screen and (max-width: 768px) {
+    .button_link {
+        width: 80%;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 36px;
+    }
+}
