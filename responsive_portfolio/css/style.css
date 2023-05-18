@@ -18,11 +18,15 @@ h3,
 a {
     font-family: 'Secular One', sans-serif;
     text-align: center;
+    align-items: center;
+    font-size: 25px;
+    margin-top: 40px;
 }
 
 h4,
 p {
     font-family: 'Assistant', sans-serif;
+
 }
 
 h1 {
@@ -30,26 +34,44 @@ h1 {
     margin-bottom: 0;
 }
 
+
 h4 {
     font-size: 18px;
-    margin-top: 4px;
+    margin-top: 40px;
+    
 }
 
 a {
     text-decoration: none;
 }
 
+
 nav,
 nav a,
 footer a {
     color: darkred;
+    width: 8900px;
+    margin: 12px;
+    align-items: center;
+    
 }
 
 nav a:hover,
 footer a:hover {
     text-decoration: underline;
+    background-color: black;
 }
 .card
+
+
+.social_media {
+    width: 450px;
+    border: 5px solid lightcoral;
+    background-color: lightyellow;
+    padding: 6px;
+    margin: 12px;
+    align-self: center;
+}
 /****************************************************************************
   Grid styles
 ****************************************************************************/
@@ -91,6 +113,8 @@ nav {
 
 footer {
     grid-area: footer_area;
+    align-items: center;
+    color: darkred;
 }
 /****************************************************************************
   Nav/Footer styles
@@ -107,7 +131,9 @@ footer {
 }
 
 #nav_links {
-    justify-content: center;
+    color: darkred;
+    
+
 }
 
 #nav_links,
@@ -116,10 +142,6 @@ footer {
     list-style-type: none;
 }
 
-#nav_links li,
-.social_media li {
-    padding: 0 4px;
-}
 
 nav .social_media {
     justify-content: flex-end;
@@ -293,7 +315,130 @@ footer ul {
     margin-bottom: 24px;
 }
 
+#grid_container {
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+    grid-template-areas:
+    ". header_area ."
+    ". main_area .";
+}
+header {
+    grid-area: header_area;
+    
+}
+main {
+    grid-area: main_area;
+}
 
+form {
+    background-color: white;
+    border: 2px solid #CCCCCC;
+    padding: 36px;
+}
+
+input[type=submit] {
+    background: rgb(17, 172, 17);
+    border: 0px;
+    border-radius: 8px;
+    padding: 12px 48px;
+    cursor: pointer;
+    color:white;
+    text-align: center;
+}
+input[type=submit]:hover {
+    opacity: 0.9;
+}
+input[type=submit]:active {
+    background: rgb(17, 172, 17);
+}
+
+.text_input label {
+    display: block;
+}
+
+.text_input input {
+    margin: 4px 0px 16px;
+    padding: 12px;
+    font-size: 18px;
+    font-family: Verdana, sans-serif;
+    width: 300px;
+
+}
+
+#first_name_id {
+    border: 5px solid lightgray;
+    border-radius: 10px;
+    color: black;
+    width: 100%
+}
+
+#first_name_id:focus-visible {
+    outline: 0;
+    background-color: lightgrey;
+}
+
+#first_name_id:invalid {
+    background-color: rgb(248, 237, 237);
+    border-bottom: 4px solid lightgrey;
+}
+
+input[type=email]:invalid {
+    background-color: lightcoral;
+    border-bottom: 4px solid red;
+}
+
+#last_name_id {
+    border: 5px solid lightgrey;
+    border-radius: 10px;
+    color: black;
+    width: 100%;
+}
+
+#last_name_id:focus-visible {
+    outline: 0;
+    background-color: rgb(248, 237, 237);
+    color: black;
+}
+
+#email_id {
+    border: 5px solid lightgrey;
+    border-radius: 10px;
+    color: black;
+    width:100%;
+}
+
+#email_id:focus-visible {
+    outline: 0;
+    background-color: rgb(248, 237, 237);
+    color: black;
+}
+
+#code_feelings_id {
+    border: 5px solid lightgrey;
+    border-radius: 10px;
+    color: black;
+    width: 100%;
+    outline: 0;
+    background-color: rgb(248, 237, 237);
+}
+
+.div {
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.me_image {
+    width: 450px;
+    border: 5px solid lightcoral;
+    background-color: lightyellow;
+    padding: 6px;
+    margin: 12px;
+    align-self: center;
+}
+
+.me_image img {
+    width: 100%;
+}
 /****************************************************************************
   Media Query - Mobile Breakpoint
 ****************************************************************************/
