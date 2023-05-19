@@ -45,12 +45,14 @@ a {
     text-decoration: none;
 }
 
+li {
+    text-align: center;
+}
 
 nav,
 nav a,
 footer a {
     color: darkred;
-    width: 8900px;
     margin: 12px;
     align-items: center;
     
@@ -59,7 +61,7 @@ footer a {
 nav a:hover,
 footer a:hover {
     text-decoration: underline;
-    background-color: black;
+    background-color: lightgrey;
 }
 .card
 
@@ -89,8 +91,11 @@ footer a:hover {
         "footer_area footer_area footer_area";
 }
 
-nav {
+#nav_links {
     grid-area: nav_area;
+    padding: 24px;
+    text-align: center;
+    
 }
 
 #hero {
@@ -123,6 +128,7 @@ nav {
     align-items: center;
     display: flex;
     margin: 0 24px;
+    background-color: rgb(206, 160, 139);
 }
 
 footer {
@@ -131,7 +137,7 @@ footer {
 }
 
 #nav_links {
-    color: darkred;
+    color: white;
     
 
 }
@@ -140,6 +146,7 @@ footer {
 .social_media {
     display: flex;
     list-style-type: none;
+    align-content: center;
 }
 
 
